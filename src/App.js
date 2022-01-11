@@ -2,6 +2,8 @@ import "./App.css";
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Header from './Header';
 import Home from './Home';
+import Login from './Login';
+import Signin from './Signin';
 
 
 
@@ -15,7 +17,10 @@ function App() {
             <h1> cheout</h1>
           </Route>
           <Route path="/login">
-            <h1> Login Page</h1>
+            <Login />
+          </Route>
+          <Route path="/Sign__up">
+            <Signin />
           </Route>
           <Route path="/">
             <Header />
